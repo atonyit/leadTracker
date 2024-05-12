@@ -1,11 +1,11 @@
 let myLeads = [];
-const inputBTN = document.querySelector("#input-btn");
-const inputEl = document.querySelector("#input-el");
-const ulEl = document.querySelector("#ul-el");
+const inputBTN = document.getElementById("input-btn");
+const inputEl = document.getElementById("input-el");
+const ulEl = document.getElementById("ul-el");
 
 inputBTN.addEventListener("click", function() {
     myLeads.push(inputEl.value);
-    console.log(myLeads);
+    inputEl.value = " ";
     renderLeads();
 })
 
