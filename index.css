@@ -20,5 +20,8 @@ font-size: medium;
 border: none;
 width: 30%;
 margin-top: 4px;
+}
 
+button:hover{
+    cursor: pointer;
 }
