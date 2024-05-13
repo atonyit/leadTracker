@@ -13,6 +13,7 @@ function renderLeads(){
     let listItems = "";
     for (let i = 0; i < myLeads.length; ++i){
         // listItems += "<li><a target= '_blank' href ='" + myLeads[i] + "'>" + myLeads[i] + "</a></li>";
+        //changed to a template string for readability
         listItems += `
             <li>
             <a target= '_blank' href ='${myLeads[i]}'>
