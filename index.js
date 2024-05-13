@@ -12,15 +12,16 @@ if(leadsFromLocalStorage){
     render(myLeads);
 }
 
-const tabs = [
-    {url: "linkedin.com/in/alan-tony-itoyah-aa8627262/"}
-]
 
 tabBTN.addEventListener("click", function(){
+    // chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+    // });
     
-    myLeads.push(tabs[0].url);
-    localStorage.setItem("myLeads", JSON.stringify(myLeads));
-    render(myLeads);
+    chrome.tabs.query({active: true, currentWindow: true}, function(tabs){
+        myLeads.push(tabs[0].url);
+        localStorage.setItem("myLeads", JSON.stringify(myLeads));
+        render(myLeads);
+    })
 })
 
 function render(leads){
