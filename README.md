@@ -40,8 +40,3 @@ To install and run the Lead Tracker extension locally:
 ## Dependencies
 - Chrome Browser with support for Manifest V3.
 
-## Support
-For any issues or questions, please open an issue on the GitHub repository page or contact me directly.
-
-## License
-This project is licensed under the MIT License - see the LICENSE file for details.
