@@ -28,6 +28,11 @@ margin-top: 4px;
     color: #5f9341;
 }
 
+#tab-btn{
+    background-color: #0047AB;
+    color: white;
+}
+
 button:hover{
     cursor: pointer;
 }

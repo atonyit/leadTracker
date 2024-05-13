@@ -16,7 +16,7 @@ if(leadsFromLocalStorage){
 tabBTN.addEventListener("click", function(){
     // chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
     // });
-    
+
     chrome.tabs.query({active: true, currentWindow: true}, function(tabs){
         myLeads.push(tabs[0].url);
         localStorage.setItem("myLeads", JSON.stringify(myLeads));
@@ -40,7 +40,7 @@ function render(leads){
     ulEl.innerHTML = listItems;
 }
 
-deleteBTN.addEventListener("dblclick", function(){
+deleteBTN.addEventListener("click", function(){
     localStorage.clear();
     myLeads = [];
     render(myLeads);
